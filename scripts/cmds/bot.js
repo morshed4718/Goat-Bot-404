@@ -121,7 +121,7 @@ module.exports = {
   onChat: async function ({ api, event }) {
     try {
       const body = event.body ? event.body.toLowerCase().trim() : "";
-      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu"];
+      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu", " Ai", "Leo", ];
       const startsWithPrefix = prefixes.find(prefix => body.startsWith(prefix));
 
       if (startsWithPrefix) {
