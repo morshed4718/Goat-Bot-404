@@ -47,7 +47,7 @@ module.exports = {
 💫 🌐 Prefix hệ thống: %1
 🛸 Prefix nhóm của bạn: %2
 🔧 Sử dụng: Gõ "%2help" để xem tất cả lệnh
-👑 Bot by: @Aminusardar
+👑 Bot by: @Leo MorshEd
 🎯 Chúc bạn sử dụng bot vui vẻ! 💖
 ➽────────────────❥`
 		},
@@ -65,7 +65,7 @@ module.exports = {
 💫 🌐 System prefix: %1
 🛸 Your box chat prefix: %2
 🔧 Usage: Type "%2help" to see all commands
-👑 Bot by: @Aminusardar
+👑 Bot by: @Leo MorshEd
 🎯 Enjoy using the bot! 💖
 ➽────────────────❥`
 		}
