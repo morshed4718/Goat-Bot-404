@@ -121,7 +121,7 @@ module.exports = {
   onChat: async function ({ api, event }) {
     try {
       const body = event.body ? event.body.toLowerCase().trim() : "";
-      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu", "leo" ];
+      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu", "leo"];
       const startsWithPrefix = prefixes.find(prefix => body.startsWith(prefix));
 
       if (startsWithPrefix) {
@@ -143,6 +143,7 @@ module.exports = {
 
         // If no question asked, reply randomly — and set up reply tracking
         const randomReplies = [
+          
         "হ্যাঁ জানু, বলো! 🥹❤️",
         "হুম জান, তোমার জন্য সবসময় আছি! 🥰",
         "আহারে, আমারে মনে পড়ছে নাকি? 🥹💕",
@@ -171,6 +172,7 @@ module.exports = {
         "জি বলুন, বসের অনুমতি নিয়ে এসেছি! 🫡",
         "আমাকে ডাকছো, নাকি বস MorshEd-কে? 😎",
         "সার্ভার ঠিক আছে, এবার বলো! 😂",
+          
         ];
         const reply = randomReplies[Math.floor(Math.random() * randomReplies.length)];
         return api.sendMessage(reply, event.threadID, (err, info) => {
