@@ -35,11 +35,11 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": " Leo MorshEd",
+  "nickNameBot": "Leo MorshEd",
   "prefix": "/",
   "autoSetNickname": true,
-  "authorFB": "https://www.facebook.com/profile.php?id=100071880593545",
-  "authorName": "AminulSardar",
+  "authorFB": "https://www.facebook.com/profile.php?id=61553206311711",
+  "authorName": "Leo MorshEd",
   "authorEmail": "secret",
   "database": {
     "type": "sqlite",
@@ -51,7 +51,7 @@
   "timeZone": "Asia/Dhaka",
   "credentials": {
     "gmailAccount": {
-      "email": "batwire187@gmail.com",
+      "email": "mdmorshed9919@gmail.com",
       "clientId": "8864284320-3v8dd1uqtijifcmmg51t1j2po151si61.apps.googleusercontent.com",
       "clientSecret": "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",
       "refreshToken": "1//045OTpkSYZIviCgYIARAAGAQSNwF-L9Irm2r6F8_a-TDFfIbxTi-DBpTOmkZzOxqDqs9BQ8j7IGhBwJWZv-8Gfgtb-yVVr0BDiTA",
