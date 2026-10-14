@@ -121,7 +121,7 @@ module.exports = {
   onChat: async function ({ api, event }) {
     try {
       const body = event.body ? event.body.toLowerCase().trim() : "";
-      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu"];
+      const prefixes = ["baby", "bby", "bot", "jan", "babu", "janu", "leo",];
       const startsWithPrefix = prefixes.find(prefix => body.startsWith(prefix));
 
       if (startsWithPrefix) {
@@ -143,28 +143,39 @@ module.exports = {
 
         // If no question asked, reply randomly — and set up reply tracking
         const randomReplies = [
-          "হ্যাঁ 😀, আমি এখানে আছি",
-          "কেমন আছো?",
-          "বলো জান কি করতে পারি তোমার জন্য",
-          `তুমি বলেছো: "${body}"? কিউট!`,
-          "I love you 💝",
-          "ভালোবাসি তোমাকে 🤖",
-          "Hi, I'm messenger Bot, I can help you.?🤖",
-          "Use callad to contact admin!",
-          "Hi, Don't disturb 🤖 🚘 Now I'm going to Feni, Bangladesh..bye",
-          "Hi, 🤖 I can help you~~~~",
-          "আমি এখন আমিনুল বসের সাথে বিজি আছি",
-          "আমাকে আমাকে না ডেকে আমার বসকে ডাকো",
-          "Hmmm sona 🖤 meye hoile kule aso ar sele hoile kule new 🫂😘",
-          "Yah This Bot creator : PRINCE RID((A.R))",
-          "হা বলো, শুনছি আমি 🤸‍♂️🫂",
-          "Ato daktasen kn bujhlam na 😡",
-          "bal falaba,🙂",
-          "ask amr mon vlo nei dakben na🙂",
-          "Hmm jan ummah😘😘",
-          "hanga korba 🙂🖤",
-          "iss ato dako keno lojja lage to 🫦🙈",
-          "suna tomare amar valo lage,🙈😽"
+        
+"হ্যাঁ জানু, বলো! 🥹❤️",
+
+"হুম জান, তোমার জন্য সবসময় আছি! 🥰",
+"আহারে, আমারে মনে পড়ছে নাকি? 🥹💕",
+"বলো জান, তোমার কথা শোনার জন্যই তো বসে আছি! 😚",
+"উম্মাহ, এবার বলো কী হয়েছে! 😘💋",
+"কী রে ভাই, আবার কী হইছে? 😂",
+"ওইইই, এত ডাকাডাকি কিসের? 🤣",
+"কী হয়েছে? প্রেমে পড়ছো নাকি? 👀😂",
+"ডাকতে থাকো, একদিন বিরক্ত হয়ে রিপ্লাই দেওয়া বন্ধ করব! 🤣",
+"হ্যাঁ বলো, ফ্রি সার্ভিস চলছে! 🤖😂",
+"আবার আমি! নিজের কোনো কাজ নাই নাকি? 😭😂",
+"কী রে, আমাকে ছাড়া চলেই না? 😏🤣",
+"এই যে আসছি, মাথা খাইয়ো না! 😂",
+"একটু শান্তিতে থাকতে দাও ভাই! 😩🤣",
+
+"উফফ, আর কত ডাকবা? 😤",
+"হ্যাঁ বলো, রাগ উঠানোর নতুন প্ল্যান কী? 😑",
+
+"আবার শুরু হইলো! 🙄",
+"বল তাড়াতাড়ি, মেজাজ ভালো নাই! 😤",
+
+"এতক্ষণ কোথায় ছিলা? এখন মনে পড়ছে? 🥺💔",
+"হুম, এখন ডাকো! আগে তো খবরই নাও নাই! 😒🥹",
+
+"ডাকছো ঠিকই, কিন্তু মন থেকে ডাকছো তো? 🥺❤️",
+"কী বলো? MorshEd-এর বট হাজির! 😎🔥",
+"আস্তে ডাকো, VIP বট আমি! 😏👑",
+"জি বলুন, বসের অনুমতি নিয়ে এসেছি! 🫡",
+"আমাকে ডাকছো, নাকি বস MorshEd-কে? 😎",
+
+"সার্ভার ঠিক আছে, এবার বলো! 😂",
         ];
         const reply = randomReplies[Math.floor(Math.random() * randomReplies.length)];
         return api.sendMessage(reply, event.threadID, (err, info) => {
