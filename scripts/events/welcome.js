@@ -7,16 +7,46 @@ module.exports = {
   config: {
     name: "welcome",
     version: "1.8",
-    author: "Aminul Sardar",
+    author: "Leo MorshEd",
     category: "events"
   },
 
   langs: {
     en: {
-      defaultWelcomeMessage: `Welcome {userName} 🎉
+      defaultWelcomeMessage: `
+
+════•|      💛      |•════╗
+     ❤️আসসালামু আলাইকুম❤️
+╚════•|      💛      |•════╝
+
+━❯🅆🄴🄻🄲🄾🄼🄴➤
+
+━❯🅽🅴🆆➤
+
+━❯🇲🇪🇲🇧🇪🇷➤
+
+━❯{userName}➤
+
+༄✺আপনাকে আমাদের✺࿐
+
+
+
+🌺🌿🌸—এর পক্ষ থেকে—🌸🌿🌺
+
+🌿_ভালোবাসা অবিরাম_🌿
+
+༄✺আপনি এই গ্রুপের 98 নং মেম্বার࿐
 
 Total members: {membersCount}
 Total admins: {adminsCount}
+
+আমাদের সাথে সময় দেওয়া ও পাশে থাকার অনুরোধ রইলো !! 🍂🌺🥀
+
+🦋༎❤❤༎🦋
+
+💐☘️-ধন্যবাদ প্রিয়-☘️💐
+𝄞❤️⋆⃝❤️ BOT-OWNER: Leo MorshEd ❤️
+
 
 Time: {dateTime}`
     }
