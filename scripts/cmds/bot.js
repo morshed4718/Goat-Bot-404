@@ -2,14 +2,14 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: "jan",
+    name: "Leo",
     version: "1.4.1",
-    author: "Aminul Sardar",
+    author: "Leo MorshEd",
     countDown: 0,
     role: 0,
-    aliases: ["jaan", "janu", "bby"],
-    shortDescription: "Jan AI চ্যাটবট",
-    longDescription: "Jan AI বট যেটা শেখানো যেতে পারে এবং প্রশ্নের উত্তর দিতে পারে।",
+    aliases: ["jaan", "janu", "bby, Morshed, Bot"],
+    shortDescription: "leo AI চ্যাটবট",
+    longDescription: "MorshEd AI Bot — প্রশ্নের উত্তর দেয়, কথা বলে এবং মজার রিপ্লাই করে।",
     category: "jan",
     guide: `{pn} <message>
 {pn} teach <প্রশ্ন> - <উত্তর>
