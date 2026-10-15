@@ -2,7 +2,7 @@ module.exports = {
 	config: {
 		name: "autoUpdateThreadInfo",
 		version: "1.4",
-		author: "Aminul Sardar",
+		author: "NTKhang",
 		category: "events"
 	},
 
@@ -18,28 +18,20 @@ module.exports = {
 			case "log:subscribe":
 				return async function () {
 					const { addedParticipants } = event.logMessageData;
-					let threadInfo_Fca;
-					try {
-						threadInfo_Fca = await api.getThreadInfo(threadID);
-					} catch (e) {
-						threadInfo_Fca = null;
-					}
-					if (threadInfo_Fca) {
-						threadsData.refreshInfo(threadID, threadInfo_Fca);
-					}
+					const threadInfo_Fca = await api.getThreadInfo(threadID);
+					threadsData.refreshInfo(threadID, threadInfo_Fca);
 
 					for (const user of addedParticipants) {
 						let oldData = members.find(member => member.userID === user.userFbId);
 						const isOldMember = oldData ? true : false;
 						oldData = oldData || {};
-						const { userInfo = [], nicknames = {} } = threadInfo_Fca || {};
+						const { userInfo, nicknames } = threadInfo_Fca;
 
-						const targetUser = Array.isArray(userInfo) ? userInfo.find(u => u.id == user.userFbId) : null;
 						const newData = {
 							userID: user.userFbId,
 							name: user.fullName,
-							gender: targetUser?.gender,
-							nickname: (nicknames && nicknames[user.userFbId]) || null,
+							gender: userInfo.find(u => u.id == user.userFbId)?.gender,
+							nickname: nicknames[user.userFbId] || null,
 							inGroup: true,
 							count: oldData.count || 0
 						};
